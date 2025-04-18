@@ -1,9 +1,23 @@
-from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
+from flask import Flask
+from threading import Thread
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import os
 
-TOKEN = os.environ.get("BOT_TOKEN")  # Gunakan nama env yang aman dan jelas
-app = ApplicationBuilder().token(TOKEN).build()
+# === KEEP ALIVE ===
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot PERTASLOT Aktif!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+Thread(target=run).start()
+
+# === SETUP BOT ===
+TOKEN = os.environ.get("TOKEN")  # Ambil token dari Environment Render
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
