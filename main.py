@@ -21,7 +21,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("🎰 RTP GACOR", web_app=WebAppInfo(url="https://kayapertaslot.com/register/K5PRL9B2"))],
         [InlineKeyboardButton("🎁 PROMOTION", web_app=WebAppInfo(url="https://kayapertaslot.com/register/K5PRL9B2"))],
         [InlineKeyboardButton("📲 SOCIAL MEDIA", web_app=WebAppInfo(url="https://kayapertaslot.com/register/K5PRL9B2"))],
-        [InlineKeyboardButton("💬 LIVECHAT", web_app=WebAppInfo(url="https://kayapertaslot.com/register/K5PRL9B2"))],
+        [InlineKeyboardButton("💬 LIVECHAT", web_app=WebAppInfo(url="https://direct.lc.chat/14269029/"))],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
