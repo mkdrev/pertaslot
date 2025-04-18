@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_photo(
         chat_id=chat_id,
-        photo="https://i.pinimg.com/736x/99/9b/b8/999bb8d77251045efa7364b96c170509.jpg",
+        photo="https://i.pinimg.com/736x/53/f4/44/53f444a2eb3faa524d0f8f3a1683d78a.jpg",
         caption="Halo Bosku, selamat datang di *PERTASLOT!*\n\n"
                 "Pilih menu di bawah untuk mulai bermain atau cek fitur lainnya.",
         parse_mode="Markdown"
